@@ -5,55 +5,57 @@ using namespace std;
 int main() {
 
 	int selection;
-	string month[12] = { "31", "28", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31" };
-  int year;
+	 string month[12] = { "31", "28", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31" };
+    int year;
 
 
 	cout << "what month do you want? ";
-	cin >> selection;
+	 cin >> selection;
 
 	switch (selection) {
 	case 1:
 		cout << "this month has " << month[0] << " days";
-		break;
+		  break;
 	case 2:
 		cout << "this month has " << month[1] << " days, except for on leap years when it has 29";
-		break;
+		  break;
 	case 3:
 		cout << "this month has " << month[2] << " days";
-		break;
+		  break;
 	case 4:
 		cout << "this month has " << month[3] << " days";
-		break;
+		  break;
 	case 5:
 		cout << "this month has " << month[4] << " days";
-		break;
+		  break;
 	case 6:
 		cout << "this month has " << month[5] << " days";
-		break;
+		  break;
 	case 7:
 		cout << "this month has " << month[6] << " days";
-		break;
+		  break;
 	case 8:
 		cout << "this month has " << month[7] << " days";
-		break;
+		  break;
 	case 9:
 		cout << "this month has " << month[8] << " days";
-		break;
+		  break;
 	case 10:
 		cout << "this month has " << month[9] << " days";
-		break;
+		  break;
 	case 11:
 		cout << "this month has " << month[10] << " days";
-		break;
+		  break;
 	case 12:
 		cout << "this month has " << month[11] << " days";
-		break;
+		  break;
 	};
 
   cout << "please enter the year: ";
-  cin >> year;
+    cin >> year;
+
 //borrowed code below form tutorialspoint.com
+
   if (year % 4 == 0) {
    if (year % 100 == 0) {
       if (year % 400 == 0)
@@ -64,6 +66,4 @@ int main() {
    cout << year << " is a leap year";
 } else
 cout << year << " is not a leap year";
-
-	return 0;
 }
